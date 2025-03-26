@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Formulario de Viajes</h1>
+        <form id="travelForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+
+            <label for="country">País que has visitado:</label>
+            <input type="text" id="country" required>
+
+            <button type="submit">Añadir País</button>
+        </form>
+
+        <button id="showDataBtn">Mostrar todos los datos almacenados</button>
+
+        <div id="personList">
+            <h2>Personas y sus países</h2>
+            <ul id="personCountries"></ul>
+        </div>
+
+        <!-- Nueva sección para mostrar todos los datos -->
+        <div id="allDataSection" style="display: none;">
+            <h2>Todos los Datos Almacenados</h2>
+            <pre id="allDataOutput"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
